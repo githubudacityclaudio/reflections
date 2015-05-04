@@ -1,0 +1,22 @@
+Using diff helped me, because it narrowed down my focus on lines that had changed.
+Of course, a typo could be everywhere, but it seems natural to always check the last changes one has made.
+This implies that unchanged lines have previouly been checked and the changed ones are most likely to contain errors.
+
+Access to earlier versions of ones work makes it easy to undo and/or redo changes.
+Also when I forget why I have made a change long ago, it can help me remember, because knowing the order in which changes where made provides useful context.
+
+When it is chosen manually, when to create a commit, it is possible to commit changes together, that logically belong together.
+On the other hand, automatical saving ensures, that one doesn't forget to save. Also, when the interval between saving is configured to be short, there are mor point to go back to, when an error occurs.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+In git a commit should reflect a logically consistent state. Changes in one file might be connectected to changes in other files. If the files are part of an application, for instance, than the application might be functional before and after both changes are made, but not when only one file is changed and not the other.
+In Google docs a save does not necessarily reflect a logically coherent save and there is no explicit connection between several documents. Therefore it makes more sense to save files individually.
+
+How might using version control make you more confident to make changes that could break something?
+
+Knowing that any change can be ammended without need to throw away other changes, makes it less of a risk, to intruduce a change that might break the code.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Well, I'll keep using it for coding, especially larger and/or collaborative projects. But I also intend to use it on other text-based projects such as my thesis.
