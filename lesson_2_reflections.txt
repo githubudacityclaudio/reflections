@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Git creates a .git directory that contains metadata about the current directory, effectively making it a git repository. The .git directory contains/will contain information about tracked files and their changes across the commits of the repository.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+One doesn't edit files in the staging area. Instead changed (or new) files can be added to the staging area to include those changes in the following commit. other changes will not be included. 
+The benefit of having a staging area is that one can choose which changes should be included in a commit and which should not, at least on a file level. It makes it more easy and convenient to ensure 
