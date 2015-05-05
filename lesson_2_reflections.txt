@@ -18,3 +18,7 @@ When I develop a feature that may not end up in the final version of the code. W
 How do the diagrams help you visualize the branch structure?
 
 Well isn't that pretty much all they do? Anyhow, when compared to the standard git log output diagrams do offer the the additional benefit that all commits of all branches are shown (and also commits that belong to no branch, if I choose to draw those, tool). Such a diagram tells me the parent of each commit and hence which changes are included in which commit and branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The latest commit (of the branch that is the target of the merge) now has two parent commits. The latest commit of the branched that was merged in addition to the one it already had. As a result the current branch has all the changes that were made on either branch. In the regular git log output the commits are still presented in a linear fashion. They are ordered by timestamp. However it makes sense to present the commits in a diagram that shows both branches as it represents the commit hierarchy.
