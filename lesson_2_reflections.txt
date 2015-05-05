@@ -6,3 +6,15 @@ How is the staging area different from the working directory and the repository?
 
 One doesn't edit files in the staging area. Instead changed (or new) files can be added to the staging area to include those changes in the following commit. other changes will not be included. 
 The benefit of having a staging area is that one can choose which changes should be included in a commit and which should not, at least on a file level. It makes it more easy and convenient to ensure 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+By staging all files that have been changed or added as a part of a larger logically coherent change not staging other files that have unrelated changes.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When I develop a feature that may not end up in the final version of the code. When I work with other people and I implement a new feature. That way the work of others will not be affected prematurely by mine. Possibly also if I want to develop different versions of a program.
+
+How do the diagrams help you visualize the branch structure?
+
+Well isn't that pretty much all they do? Anyhow, when compared to the standard git log output diagrams do offer the the additional benefit that all commits of all branches are shown (and also commits that belong to no branch, if I choose to draw those, tool). Such a diagram tells me the parent of each commit and hence which changes are included in which commit and branch.
