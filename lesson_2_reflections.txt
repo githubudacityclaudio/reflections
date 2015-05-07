@@ -22,3 +22,10 @@ Well isn't that pretty much all they do? Anyhow, when compared to the standard g
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
 The latest commit (of the branch that is the target of the merge) now has two parent commits. The latest commit of the branched that was merged in addition to the one it already had. As a result the current branch has all the changes that were made on either branch. In the regular git log output the commits are still presented in a linear fashion. They are ordered by timestamp. However it makes sense to present the commits in a diagram that shows both branches as it represents the commit hierarchy.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+I find it hard to come up with any cons, but I guess that automatic merging might still lead to unwanted outcomes, when one developer was not aware of the changes that another developer made. Even when they weren't in the same place they might still interfere.
+On the plus side it's simply very convenient and fast, not having to got through other developers changes, when most of the time all is fine. Manually merging all changes can become quite tedious and as a result error prone.
+
+
