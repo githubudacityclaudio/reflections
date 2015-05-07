@@ -6,3 +6,7 @@ Why might you want to always pull changes manually rather than having Git automa
 
 When I pull from a remote repository I am effectively merging a remote branch into a local branch. As with any merge this can result in conflicts. By pulling manually I can choose when I want to deal with potential conflicts instead of being interrupted while coding. If pulls where performed automatically there might even be conflicts with parts of a file I am working on right now. Resolving them makes no sense at that time. Even without conflicts changes by another developer might break my code, which he would be unaware of.
 It would probably by quite confusing, too, when new code just pops up out of nowhere. I would have to interrupt my work to check incoming changes.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+A branch is a reference to a commit. I would use it to develop a feature that I can merge back into the master branch once it is complete. A clone is a copy of a repository. I would use it whenever I work on a collaborative project. A fork is a clone of a git repository on github, that is itself hosted on github. I would use it to create my own version of an existing programme.
