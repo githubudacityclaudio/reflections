@@ -10,3 +10,8 @@ It would probably by quite confusing, too, when new code just pops up out of now
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 A branch is a reference to a commit. I would use it to develop a feature that I can merge back into the master branch once it is complete. A clone is a copy of a repository. I would use it whenever I work on a collaborative project. A fork is a clone of a git repository on github, that is itself hosted on github. I would use it to create my own version of an existing programme.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+When I know that I will be offline for a while I can fetch the latest state of the remote repository. After commiting changes to my branch I can at least merge the local copy of the remote branch into my branch or vice versa once it makes sense. I can then go on from there and maybe do some more work before I need the latest changes.
+Also I can fetch a remote branch without merging it right away to inspect it first. Git could have implemented a way to do that directly on the remote, but that would blur the distinctions between seperate repositories. It might also be slower and requires continuous online connectivity, of course.
